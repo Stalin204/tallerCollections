@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.PrincipalMainController">
+   <children>
+      <Button fx:id="ButtonSaleHistory" layoutX="141.0" layoutY="131.0" mnemonicParsing="false" onAction="#ActionHistorySale" prefHeight="57.0" prefWidth="127.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Hisotorial de ventas " textFill="#fcf8f8" />
+      <Button fx:id="Products" layoutX="337.0" layoutY="131.0" mnemonicParsing="false" onAction="#ActionProduct" prefHeight="57.0" prefWidth="127.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Comprar productos" textFill="#eeebeb" />
+      <Button fx:id="AddClients" layoutX="141.0" layoutY="227.0" mnemonicParsing="false" onAction="#ActionAddClients" prefHeight="57.0" prefWidth="127.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Agregar clientes" textFill="#f8f5f5" />
+      <Label layoutX="232.0" layoutY="33.0" prefHeight="41.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Tienda Akira Torimaya " textFill="#f8f8f8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="ShoppingCart" layoutX="337.0" layoutY="227.0" mnemonicParsing="false" onAction="#ActionShoppingCart" prefHeight="57.0" prefWidth="127.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Carrito de compras" textFill="#e4e2e2" />
+   </children>
+</AnchorPane>

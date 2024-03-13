@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.SaleHistoryController">
+   <children>
+      <TableView fx:id="tableHistory" layoutY="77.0" prefHeight="307.0" prefWidth="637.0">
+        <columns>
+          <TableColumn fx:id="CustomerNumber" prefWidth="194.0" text="Numero cliente" />
+            <TableColumn fx:id="NumberProduct" prefWidth="135.0" text="Número producto" />
+            <TableColumn fx:id="quantityofProductsPurchased" prefWidth="172.0" text="cantidad productos" />
+            <TableColumn fx:id="DateofPurchase" prefWidth="135.0" text="Fecha" />
+        </columns>
+      </TableView>
+      <Label fx:id="LabelHistorialVentas" layoutX="204.0" layoutY="20.0" stylesheets="@../style/historicoVenta.css" text="Historial de ventas">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Button fx:id="back" layoutX="560.0" layoutY="20.0" mnemonicParsing="false" onAction="#backAction" text="volver" />
+   </children>
+</AnchorPane>

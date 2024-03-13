@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="564.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.CustomerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="141.0" layoutX="18.0" layoutY="75.0" stroke="#abaaaa" strokeType="INSIDE" width="760.0" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="286.0" prefHeight="264.0" prefWidth="770.0">
+         <columns>
+            <TableColumn fx:id="tcName" prefWidth="254.0" text="Nombre" />
+            <TableColumn fx:id="tcIdentificationNumber" minWidth="0.0" prefWidth="181.0" text="Codigo" />
+            <TableColumn fx:id="tcAddress" prefWidth="196.0" text="Direccion" />
+            <TableColumn fx:id="tcPhoneNamber" minWidth="4.0" prefWidth="138.0" text="Numero telefono" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnNew" layoutX="50.0" layoutY="243.0" mnemonicParsing="false" onAction="#createAction" prefHeight="25.0" prefWidth="91.0" text="Crear" />
+      <Button fx:id="btnUpdate" layoutX="243.0" layoutY="243.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="25.0" prefWidth="91.0" text="Actualizar" />
+      <Button fx:id="btnDelete" layoutX="442.0" layoutY="243.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="25.0" prefWidth="91.0" text="Eliminar" />
+      <Button fx:id="btnClear" layoutX="651.0" layoutY="243.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="25.0" prefWidth="91.0" text="Limpiar " />
+      <TextField fx:id="txtName" layoutX="167.0" layoutY="105.0" prefHeight="25.0" prefWidth="244.0" />
+      <TextField fx:id="txtIdentificationNamber" layoutX="571.0" layoutY="105.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="571.0" layoutY="154.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="txtAddress" layoutX="171.0" layoutY="154.0" prefHeight="25.0" prefWidth="244.0" />
+      <Label layoutX="45.0" layoutY="109.0" text="Nombre del cliente" />
+      <Label layoutX="427.0" layoutY="109.0" text="Documento de identidad" />
+      <Label layoutX="46.0" layoutY="158.0" text="Direccion" />
+      <Label layoutX="427.0" layoutY="158.0" text="Numero de telefono" />
+      <Pane prefHeight="64.0" prefWidth="801.0" style="-fx-background-color: #c5c5c5;">
+         <children>
+            <Label layoutX="296.0" layoutY="15.0" text="Gestion Clientes">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="714.0" layoutY="20.0" mnemonicParsing="false" onAction="#backAction" text="volver" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

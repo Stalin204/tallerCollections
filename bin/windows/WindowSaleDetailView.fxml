@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.SaleController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="8.0" prefHeight="35.0" prefWidth="186.0" text="Venta Realizada" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="58.0" text="Cliente id:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="81.0" text="Nombre:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableVentasProducto" layoutX="37.0" layoutY="113.0" prefHeight="229.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="columnIdProducto" prefWidth="94.0" text="Id" />
+          <TableColumn fx:id="columnNombre" prefWidth="97.0" text="Nombre" />
+            <TableColumn fx:id="columnCantidad" prefWidth="71.0" text="cantidad" />
+            <TableColumn fx:id="columnPrecio" prefWidth="139.0" text="Precio individual" />
+            <TableColumn fx:id="columnSubtotal" prefWidth="150.0" text="Subtotal" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="364.0" layoutY="341.0" prefHeight="26.0" prefWidth="71.0" text="Total:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="IdCliente" layoutX="121.0" layoutY="58.0" prefHeight="19.0" prefWidth="117.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombreCliente" layoutX="124.0" layoutY="81.0" prefHeight="19.0" prefWidth="117.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCompra" alignment="CENTER" layoutX="437.0" layoutY="341.0" prefHeight="26.0" prefWidth="152.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="16.0" text="Fecha: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateSale" layoutX="429.0" layoutY="16.0" prefHeight="19.0" prefWidth="117.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="ButtonBackToStore" layoutX="498.0" layoutY="402.0" mnemonicParsing="false" onAction="#actionBackToStore" prefHeight="35.0" prefWidth="117.0" text="Volver a Tienda" />
+      <Button fx:id="ButtonHistorial" layoutX="362.0" layoutY="402.0" mnemonicParsing="false" onAction="#actionHistorial" prefHeight="35.0" prefWidth="117.0" text="Historial de ventas" />
+   </children>
+</AnchorPane>
